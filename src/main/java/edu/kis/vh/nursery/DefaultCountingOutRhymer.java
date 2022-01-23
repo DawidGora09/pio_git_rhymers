@@ -2,15 +2,18 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int NUMBERS_ARRAY_LENGTH = 12;
-    public static final int FULL = 11;
-    public static final int CALL = -1;
-    public static final int CALL_CHECKED = -1;
-    public static final int TOTAL_INITIAL_VALUE = -1;
+    private static final int NUMBERS_ARRAY_LENGTH = 12;
+    private static final int FULL = 11;
+    private static final int CALL = -1;
+    private static final int CALL_CHECKED = -1;
+    private static final int TOTAL_INITIAL_VALUE = -1;
 
-    private final int[]  numbers = new int[NUMBERS_ARRAY_LENGTH];
-    public int total = TOTAL_INITIAL_VALUE;
+    private final int[] numbers = new int[NUMBERS_ARRAY_LENGTH];
+    private int total = TOTAL_INITIAL_VALUE;
 
+    public int getTotal() {
+        return total;
+    }
 
     public void countIn(int in) {
         if (!isFull())

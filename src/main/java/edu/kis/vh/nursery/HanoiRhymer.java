@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
 //alt+left select previous tab, alt+right select next tab
-    int totalRejected = 0;
+    private int totalRejected = 0;
 
     public int reportRejected() {
         return totalRejected;
