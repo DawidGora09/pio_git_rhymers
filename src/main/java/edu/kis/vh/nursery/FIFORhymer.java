@@ -4,6 +4,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
     private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+    // TODO: needs refactoring - should delete unnecessary indentations
     @Override
     public int countOut() {
         while (!callCheck())

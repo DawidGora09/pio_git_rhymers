@@ -40,6 +40,7 @@ public class IntLinkedList {
 
     private static class Node {
 
+        // TODO: needs refactoring - field can be final
         private int value;
         private Node prev;
         private Node next;
